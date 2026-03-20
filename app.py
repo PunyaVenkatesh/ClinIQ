@@ -222,6 +222,31 @@ st.markdown("""
         width: 100%;
         cursor: pointer;
     }
+            /* Android Chrome fix */
+textarea {
+    background-color: #ffffff !important;
+    color: #2D3748 !important;
+    border: 1px solid #CBD5E0 !important;
+    border-radius: 8px !important;
+}
+
+.stTextArea textarea {
+    background-color: #ffffff !important;
+    color: #2D3748 !important;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+    .clinical-header h1 {
+        font-size: 1.8rem !important;
+    }
+    .clinical-header p {
+        font-size: 0.9rem !important;
+    }
+    .metric-card {
+        margin-bottom: 8px !important;
+    }
+}
 </style>
 """, unsafe_allow_html=True)
 
